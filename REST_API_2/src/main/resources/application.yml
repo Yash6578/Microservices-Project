@@ -1,0 +1,22 @@
+spring:
+    application:
+        name: HOME-API
+
+#To Connect with Admin Client
+    boot:
+        admin:
+            client:
+                url: http://localhost:1111/
+
+#To Connect with Eureka Client
+eureka:
+    client:
+        serviceUrl:
+            defaultZone: http://localhost:8761/eureka
+#For Actuator
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+
